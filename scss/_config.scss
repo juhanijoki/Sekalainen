@@ -11,7 +11,7 @@ $background-opacity: 0.9;
       background-attachment: fixed;
       background-size: cover;
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
@@ -21,10 +21,33 @@ $background-opacity: 0.9;
         background: rgba($primary-color, $background-opacity);
       }
     }
-    
   }
 }
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
 }
