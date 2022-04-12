@@ -1,4 +1,4 @@
-$primary-color: gray;
+$primary-color: rgb(228, 222, 222);
 $secondary-color: rgb(32, 54, 180);
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
@@ -21,6 +21,14 @@ $background-opacity: 0.9;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return black;
+  } @else {
+    @return white;
   }
 }
 

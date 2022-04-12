@@ -45,6 +45,16 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    grid-template-areas: 
+    'bioimage'
+    'bio'
+    'tyo1'
+    'tyo2'
+    'tyo3';
+    grid-template-columns: 1fr;
+  }
 }
 
 // Älypuhelimet

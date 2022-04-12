@@ -15,7 +15,7 @@ $my-image: url(../img/my_picture.jpg);
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
   // Menun rotaatio X:ksi
@@ -86,11 +86,11 @@ $my-image: url(../img/my_picture.jpg);
 
     .portrait {
       background: $my-image;
+      background-size: cover;
       width: 250px;
       height: 250px;
       border-radius: 50%;
       border: solid 3px $secondary-color;
-      
     }
   }
 
@@ -114,7 +114,7 @@ $my-image: url(../img/my_picture.jpg);
     text-transform: capitalize;
     padding: 1rem 0;
     font-weight: 300;
-    color: aliceblue;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
